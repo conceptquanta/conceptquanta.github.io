@@ -1,0 +1,87 @@
+// Contains styling for content
+h1, h2, h3, h4, h5, h6, p, li, blockquote {
+	line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	margin: 1em 0;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 2em;
+	margin: 0.5em 0;
+	text-transform: uppercase;
+	// color: darken($concept-red, 0%);
+}
+
+h2 {
+	font-size: 1.5em;
+	padding: 0.25em 0;
+	border-bottom: 2px solid rgb(204, 204, 204);
+}
+
+h3 {
+	font-size: 1.4em;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h4 {
+	font-size: 1.3em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+h6 {
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+p {
+	margin: 1em 0;
+}
+
+hr {
+	border: 0;
+	background-color: rgb(204, 204, 204);
+	height: 1em;
+	width: 20%;
+	margin: 2em auto 1.5em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+pre, code {
+	font-family: 'Source Code Pro', monospace;
+}
+
+ul {
+	list-style: square;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ul, ol {
+	padding-left: 2em;
+
+	li {
+		margin: 0;
+	}
+
+	ul, ol {
+
+		margin-top: 0;
+	}
+}

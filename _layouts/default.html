@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ site.title }}{% if page.title %}: {{ page.title }}{% endif %}</title>
+	<link rel="stylesheet" href="{{ site.url }}/css/tang.css">
+	<link rel="shortcut icon" href="{{ site.url }}/favicon.png" />
+	{% if page.description %}<meta name="description" content="{{ page.description }}" />
+	{% else %}<meta name="description" content="{{ site.description }}" />{% endif %}
+	{% if page.date %}<meta http-equiv="date" content="{{ page.date |date: '%A, %d %b %Y %H:%M:%S GMT' }}" />{% endif %}
+</head>
+<body>
+	<div id="tang" class="{{ page.title | downcase }}">
+		<div id="header">
+			<a href="{{ site.url }}/" title="{{ site.tagline }}">
+				<h1 class="company-name">{{ site.title }}</h1>
+			</a>
+		</div>
+
+		<div id="navigation">
+			<ul class="menu">
+				{% for post in site.posts reversed %}
+					{% if post.layout == 'page' or post.layout == 'blog' %}
+					<li class="menu-item{% if page.title == post.title or (page.post == true and post.title == 'Blog') %} menu-item-selected{% endif %}"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+
+		<div id="content">
+			{{ content }}
+		</div>
+
+		<div id="footer">
+			<p class="copywrite-notice">&copy; 2013 CQ Research Group</p>
+		</div>
+	</div>
+</body>
+</html>

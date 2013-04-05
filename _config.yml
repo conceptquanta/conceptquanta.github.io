@@ -1,5 +1,9 @@
 pygments: true
-permalink: /:title/
+permalink: /blog/:title/
+markdown: redcarpet
 
 exclude: ['scss/', 'README.md', 'Gemfile.lock', 'Gemfile']
 
+title: Concept Quanta
+tagline: Create. Learn. Destroy.
+description: The CQ Research Group provides superior research services to innovators while fostering a culture of anti-failure.
