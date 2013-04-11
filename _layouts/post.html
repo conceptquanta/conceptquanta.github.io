@@ -3,4 +3,11 @@ layout: default
 post: true
 ---
 
+<div class="post {{ page.category }}">
+<h1 class="page-category">{{ page.category }}</h1>
+<h1 class="page-title">{{ page.title }}</h1>
+<p class="page-date">{{ page.date | date: page.dateformat }}</p>
 {{ content }}
+<div class="link-back"><a href="{{ site.url }}/{{ page.category }}/">Back to {{ page.category }}</a>
+</div>
+</div>

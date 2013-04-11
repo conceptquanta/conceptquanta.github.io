@@ -1,0 +1,7 @@
+<meta charset="UTF-8">
+<title>{{ site.title }}{% if page.title %}: {{ page.title }}{% endif %}</title>
+<link rel="stylesheet" href="{{ site.url }}/css/tang.css">
+<link rel="shortcut icon" href="{{ site.url }}/favicon.png" />
+{% if page.description %}<meta name="description" content="{{ page.description }}" />
+{% else %}<meta name="description" content="{{ site.description }}" />{% endif %}
+{% if page.date %}<meta http-equiv="date" content="{{ page.date |date: '%A, %d %b %Y %H:%M:%S GMT' }}" />{% endif %}

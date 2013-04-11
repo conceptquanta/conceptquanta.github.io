@@ -1,5 +1,5 @@
 pygments: true
-permalink: /blog/:title/
+permalink: /:categories/:title/
 # markdown: redcarpet
 
 exclude: ['scss/', 'README.md', 'Gemfile.lock', 'Gemfile']

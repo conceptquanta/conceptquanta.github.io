@@ -112,6 +112,79 @@ $logo-height: 63px;
 
 	@import "typography.scss";
 
+	img {
+		max-width: 100%;
+	}
+
+	img#welcome-image {
+		margin-top: 1em;
+	}
+
+	#welcome-message {
+		font-size: 1.5em;
+		font-style: oblique;
+	}
+	
+	.post {
+		padding-top: 1em;
+
+		.link-back {
+			margin-top: 2em;
+			border-top: 1px solid rgb(204, 204, 204);
+			padding-top: 1em;
+
+			a:before {
+				content: '\00AB ';
+				padding-right: 0.5em;
+			}
+		}
+
+		h1.page-category {
+			font-size: 1em;
+			margin: 0;
+			font-family: 'Source Sans Pro', sans-serif;
+			margin-bottom: -0.69em;
+		}
+		h1.page-category + h1.page-title {
+			font-size: 2em;
+			margin: 0;
+			font-weight: normal;
+			display: inline-block;
+		}
+		p.page-date {
+			display: inline-block;
+			margin-top: 0em;
+		}
+	}
+
+	
+
+	ul#research-list {
+		// list-style: none;
+		margin-top: 2em;
+		padding: 0em 2em;
+
+		li.research-topic {
+			&:first-child {
+				border-top-width: 1px;
+			}
+			border-bottom-width: 1px;
+			border-color: rgb(204, 204, 204);
+			border-style: solid;
+
+			h3.research-title {
+				margin: (1em/1.4em * 1em) 0 0;
+			}
+			p.research-description {
+				margin: 0.5em 0;
+			}
+			p.research-date {
+				font-size: 0.8em;
+				margin: 0 0 (1em/0.8em * 1em);
+			}
+		}
+	}
+
 }
 
 #footer {

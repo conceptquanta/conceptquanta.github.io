@@ -1,0 +1,33 @@
+---
+layout: page
+title: Research
+---
+
+<h1>Research</h1>
+
+<p>Currently, the CQ Research Group is in very early experiments with new projects. We can only list the code names and a very unclear descriptions of each project.</p>
+
+<h2>Current Projects</h2>
+
+<ul>
+	<li><strong>"Run Sam Run"</strong>: Aerosplice inspired puzzler</li>
+	<li><strong>"Green"</strong>: Sustainability will not die of dysentery</li>
+</ul>
+
+<p>As more experiments are analyzed, more information will become available to the public.</p>
+
+<h2>Prior Research</h2>
+
+<p>The CQ Research Group endeavors to learn a significant amount from its research. This page breifly describes each of Concept Quanta's projects with links to additional resources so the public can learn from our research, as well.</p>
+
+<ul id="research-list">
+	{% for post in site.posts %}
+	{% if post.category == 'research' %}
+	<li class="research-topic">
+		<h3 class="research-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+		<p class="research-description">{% if post.description %}{{ post.description }}{% endif %}</p>
+		<p class="research-date">{{ post.date | date: '%b %Y' }}</p>
+	</li>
+	{% endif %}
+	{% endfor %}
+</ul>
