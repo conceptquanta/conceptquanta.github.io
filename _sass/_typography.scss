@@ -20,7 +20,7 @@ h1 {
 h2 {
 	font-size: 1.5em;
 	padding: 0.25em 0;
-	border-bottom: 2px solid rgb(204, 204, 204);
+	border-bottom: 2px solid $concept-gray;
 }
 
 h3 {
@@ -47,7 +47,7 @@ p {
 
 hr {
 	border: 0;
-	background-color: rgb(204, 204, 204);
+	background-color: $concept-gray;
 	height: 1em;
 	width: 20%;
 	margin: 2em auto 1.5em;

@@ -6,6 +6,7 @@
 
 $concept-black: rgb(54, 54, 57);
 $concept-red: rgb(237, 28, 36);
+$concept-gray: rgb(204, 204, 204);
 $background-color: rgb(238, 235, 233);
 $site-width: 800px;
 
@@ -14,6 +15,12 @@ body {
 	background-color: $background-color;
 	font-family: 'Source Sans Pro', sans-serif;
 }
+
+// span.cencored {
+// 	display: inline-block;
+// 	background-color: $concept-black;
+// }
+
 #tang {
 	width: $site-width;
 	margin: 0 auto;
@@ -21,7 +28,7 @@ body {
 	a {
 		&:link, &:visited {
 			text-decoration: none;
-			border-bottom: 1px solid rgb(204, 204, 204);
+			border-bottom: 1px solid $concept-gray;
 			color: black;
 		}
 
@@ -82,11 +89,11 @@ $logo-height: 63px;
 				color: $concept-black;
 
 				&:link, &:visited {
-					border-color: rgb(204, 204, 204);
+					border-color: $concept-gray;
 				}
 
 				&:active, &:hover {
-					border-color: rgb(150, 150, 150);
+					border-color: darken($concept-gray, 21);
 				}
 			}
 		}
@@ -130,7 +137,7 @@ $logo-height: 63px;
 
 		.link-back {
 			margin-top: 2em;
-			border-top: 1px solid rgb(204, 204, 204);
+			border-top: 1px solid $concept-gray;
 			padding-top: 1em;
 
 			a:before {
@@ -160,16 +167,17 @@ $logo-height: 63px;
 	
 
 	ul#research-list {
-		// list-style: none;
+		list-style: none;
 		margin-top: 2em;
-		padding: 0em 2em;
+		padding-left: 1.5em;
+		border-left: 5px solid $concept-red;
 
 		li.research-topic {
 			&:first-child {
 				border-top-width: 1px;
 			}
 			border-bottom-width: 1px;
-			border-color: rgb(204, 204, 204);
+			border-color: $concept-gray;
 			border-style: solid;
 
 			h3.research-title {
